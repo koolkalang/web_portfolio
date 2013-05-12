@@ -1,13 +1,15 @@
 p{
-	color:red;
-	float:left;
+	color:white;
+	font-family:Helvetica;
+	text-align:center;
 }
 
 h1{
-	float:right;
+	text-align:center;
 	font-family:Helvetica, Courier;
+	color:white;
 	/*makes it so that the text doesn't take up more than one line.*/
-	white-space:nowrap;
+	/*white-space:nowrap*/
 
 }
 /*float properties - left, right, none(default), inherit */
@@ -16,6 +18,7 @@ img{
 	position:relative;
 	width:60px;
 	height:60px;
+	border:2px solid black;
 	float:left;/* this is ultimately what enabled me to have images close to each other
 	/*
 	width:60px;
@@ -27,29 +30,34 @@ html, body{
    margin:0px;
    padding:0;
    height:100%;
+   background-color:#4b4b4b;
+   background-color:white;
 }
 
 
 #header{
 	position:absolute;
-	width:70%;
+	width:50%;
+	margin-left:25%;
 	height:60px; /* height of footer*/
-	background:#ff0;
+	background:#3d3d3d;
 	padding-right:1em;
 	padding-bottom:.5em;
+	border-bottom-right-radius:7px;
+	border-bottom-left-radius:7px;
 }
 
 #body{
-	padding:10px;
+	padding:100px;
 	padding-bottom:60px; /*height of the footer*/
 }
 
 #footer{
 	position:absolute;
 	bottom:0;
-	width:70%;
-	margin-left:30%;
+	width:100%;
 	height:60px; /* height of footer*/
-	background:#6cf;
+	background:#3d3d3d;
+	white-space:nowrap;
 
 }
